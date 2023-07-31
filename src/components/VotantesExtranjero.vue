@@ -56,20 +56,11 @@
         </v-card-actions>
       </v-card>
     </v-row>
-
-    <v-row no-gutters gutters class="margen" v-if="numero_vuelta_e == 0">
-      <InfoGeneral />
-    </v-row>
-    <v-row no-gutters class="margen" v-else>
-      <InfoGeneral2 />
-    </v-row>
-
   </v-container>
 </template>
   
 <script>
-import InfoGeneral from './InfoGeneral';
-import InfoGeneral2 from './InfoGeneral2';
+
 import CodGraficose from './CodGraficose.vue';
 import CodGraficos2e from './CodGraficos2e.vue';
 import CodTablas from './CodTablas.vue';
@@ -102,7 +93,7 @@ export default {
         : this.onboarding - 1
     },
   },
-  components: { InfoGeneral, InfoGeneral2, CodGraficose, CodGraficos2e, CodTablas, MapaExtranjero }
+  components: { CodGraficose, CodGraficos2e, CodTablas, MapaExtranjero }
 
 }
 </script>

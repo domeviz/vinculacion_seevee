@@ -183,7 +183,7 @@ export default {
       auxpartido2: [],
       expand: this.expand_b,
       tituloMapa: '0',
-      titulo: 'Resultados Nacionales 2000'
+      titulo: 'Resultados Nacionales 2017'
 
     }
   },
@@ -206,7 +206,7 @@ export default {
       console.log("VueltaNum " + this.numvuelta)
 
       this.id_codMapa = ["1raVuelta", "", "", ""]
-      this.titulo = 'Resultados Nacionales 2021'
+      this.titulo = 'Resultados Nacionales 2017'
       console.log(this.candidatos)
     },
     segundaV() {
@@ -217,7 +217,7 @@ export default {
       this.numvuelta = (this.numvuelta == '2') ? '2' : '0';
       console.log("VueltaNumB2 " + this.numvuelta)
       this.id_codMapa = ["2daVuelta", "", "", ""]
-      this.titulo = 'Resultados Nacionales 2021'
+      this.titulo = 'Resultados Nacionales 2017'
     },
 
     datosBusqueda2() {

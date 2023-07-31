@@ -4,11 +4,10 @@
       <v-card flat color="c-Inicio" width="100%">
         <v-window touchless v-model="onboarding">
           <v-window-item :value="0">
-            <div >
+            <div>
               <MapaNacional v-bind:expand_b=this.boolean1 @add="(i) => numero_vuelta = i"></MapaNacional>
             </div>
           </v-window-item>
-
           <v-window-item :value="1">
             <div class="size">
               <div class="d-flex justify-center mb-6 size" v-if="numero_vuelta == 0">
@@ -28,8 +27,8 @@
               <div class="d-flex justify-center mb-6 size" v-else>
                 <CodTablas v-bind:zona="''" v-bind:vuelta=2></CodTablas>
               </div>
-              
-             <!-- <CodTablas :id_1="numero_vuelta" v-bind:key="numero_vuelta" /> -->
+
+              <!-- <CodTablas :id_1="numero_vuelta" v-bind:key="numero_vuelta" /> -->
             </div>
           </v-window-item>
         </v-window>
@@ -53,20 +52,11 @@
         </v-card-actions>
       </v-card>
     </v-row>
-
-    <v-row no-gutters class="margen" v-if="numero_vuelta == 0">
-      <InfoGeneral />
-    </v-row>
-    <v-row no-gutters class="margen" v-else>
-      <InfoGeneral2 />
-    </v-row>
-
   </v-container>
 </template>
   
 <script>
-import InfoGeneral from './InfoGeneral';
-import InfoGeneral2 from './InfoGeneral2';
+
 import MapaNacional from './MapaNacional';
 import CodGraficos from './CodGraficos.vue';
 import CodGraficos2 from './CodGraficos2.vue';
@@ -99,7 +89,7 @@ export default {
         : this.onboarding - 1
     },
   },
-  components: { InfoGeneral, InfoGeneral2, MapaNacional, CodGraficos, CodGraficos2, CodTablas }
+  components: { MapaNacional, CodGraficos, CodGraficos2, CodTablas }
 
 }
 </script>

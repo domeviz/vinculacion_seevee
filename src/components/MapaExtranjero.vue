@@ -15,7 +15,7 @@
                   <v-card elevation="25">
                     <v-card-text class="map_titulo">
                       <div class="d-flex justify-center white--text"> <span>
-                          Resultados Internacionales 2021
+                          Resultados Internacionales 2017
                         </span></div>
                     </v-card-text>
                   </v-card>
@@ -128,7 +128,7 @@ export default {
       auxpartido2: [],
       expand: this.expand_b,
       tituloMapa: '0',
-      titulo: 'RESULTADOS INTERNACIONALES 2021'
+      titulo: 'RESULTADOS INTERNACIONALES 2017'
 
     }
   },

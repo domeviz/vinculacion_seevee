@@ -28,12 +28,6 @@
               <th>
                 <h3>Porcentaje</h3>
               </th>
-              <th>
-                <h3>Porcentaje Masculino</h3>
-              </th>
-              <th>
-                <h3>Porcentaje Femenino</h3>
-              </th>
             </tr>
           </thead>
           <tbody>
@@ -42,8 +36,6 @@
               <td>{{ dato.candidato_tabla }}</td>
               <td>{{ dato.partido_pol }}</td>
               <td>{{ dato.porcentaje }}</td>
-              <td>{{ dato.porc_mas }}</td>
-              <td>{{ dato.porc_fem }}</td>
             </tr>
           </tbody>
         </table>
